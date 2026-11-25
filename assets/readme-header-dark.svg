@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 264" width="920" height="264" role="img" aria-label="Mehan Skills — @alamehan console banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1322"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .f  { fill: #e2e8f0; font-weight: 700; }
+      .w  { fill: #64748b; }
+      .b1 { fill: #f8fafc; font-weight: 700; }
+      .b2 { fill: #cbd5e1; font-weight: 700; }
+      .b3 { fill: #94a3b8; font-weight: 700; }
+      .orb { fill: #60a5fa; font-weight: 700; }
+      .dim { fill: #64748b; }
+      .key { fill: #94a3b8; font-weight: 600; }
+      .val { fill: #e2e8f0; }
+      .acc { fill: #60a5fa; font-weight: 700; }
+      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+      @keyframes pulse { 0%, 100% { opacity: 0.76; } 50% { opacity: 1; } }
+      .cur { animation: blink 1.15s steps(1) infinite; }
+      .glow { animation: pulse 3.2s ease-in-out infinite; }
+      @media (prefers-reduced-motion: reduce) { .cur, .glow { animation: none; } }
+    </style>
+  </defs>
+
+  <!-- Outer Terminal Window -->
+  <rect x="2" y="2" width="916" height="260" rx="16" fill="url(#bg)" stroke="#1e293b" stroke-width="1.5"/>
+  <path d="M2 18C2 9.16 9.16 2 18 2H902C910.84 2 918 9.16 918 18V40H2V18Z" fill="#111827"/>
+  <line x1="2" y1="40" x2="918" y2="40" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Window Controls and Title Bar -->
+  <circle cx="24" cy="21" r="5.5" fill="#ef4444" opacity="0.85"/>
+  <circle cx="42" cy="21" r="5.5" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="60" cy="21" r="5.5" fill="#10b981" opacity="0.85"/>
+  <text x="460" y="25" text-anchor="middle" class="mono dim" font-size="12">@alamehan&#160;·&#160;console&#160;—&#160;mehan-skills</text>
+  <text x="896" y="25" text-anchor="end" class="mono acc" font-size="11">COMPLEX&#160;-&gt;&#160;SIMPLE</text>
+
+  <!-- Left Stage: Recessed ASCII Monogram Well -->
+  <rect x="24" y="56" width="256" height="188" rx="12" fill="#070a12" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="212" cy="206" r="42" fill="url(#orbGlow)" class="glow"/>
+  <g class="mono" font-size="11.5">
+    <text x="54" y="77"><tspan class="f">&#160;&#160;&#160;:=++++++++++++++++++-.&#160;&#160;&#160;</tspan></text>
+    <text x="54" y="90"><tspan class="f">&#160;&#160;*@@@@@@@@@@@@@@@@@@@@@@-&#160;&#160;</tspan></text>
+    <text x="54" y="103"><tspan class="f">&#160;:@@@@@@@@@@@@@@@@@@@@@@@@&#160;&#160;</tspan></text>
+    <text x="54" y="116"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b1">::+&#160;&#160;&#160;&#160;</tspan></text>
+    <text x="54" y="129"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b1">:*%@@%:&#160;&#160;&#160;&#160;</tspan></text>
+    <text x="54" y="142"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b1">:%@@%*:&#160;&#160;&#160;&#160;&#160;&#160;</tspan></text>
+    <text x="54" y="155"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b2">+**+-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan></text>
+    <text x="54" y="168"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b2">.+%@@@+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan></text>
+    <text x="54" y="181"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;</tspan><tspan class="b2">+@@%*=.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan></text>
+    <text x="54" y="194"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;</tspan><tspan class="b3">:+*++-</tspan><tspan>&#160;&#160;&#160;&#160;</tspan><tspan class="orb">.=++=:&#160;&#160;</tspan></text>
+    <text x="54" y="207"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;</tspan><tspan class="b3">-#@@@#:</tspan><tspan>&#160;&#160;&#160;&#160;</tspan><tspan class="orb">:%@@@@@-&#160;</tspan></text>
+    <text x="54" y="220"><tspan class="f">&#160;&#160;*@@@*</tspan><tspan class="b3">%@%#=:&#160;</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="orb">#@@@@%:&#160;</tspan></text>
+    <text x="54" y="233"><tspan class="w">&#160;&#160;&#160;:=+=:</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="orb">.:::&#160;&#160;&#160;</tspan></text>
+  </g>
+
+  <!-- Right Stage: Command Prompt and Identity Readout -->
+  <text x="306" y="76" class="mono" font-size="12.5"><tspan class="acc">❯</tspan><tspan class="val">&#160;alamehan&#160;inspect&#160;</tspan><tspan class="acc">mehan-skills</tspan><tspan class="dim">&#160;--lang=en,id</tspan></text>
+
+  <text x="306" y="112" class="sans" fill="#f8fafc" font-size="26" font-weight="800" letter-spacing="-0.02em">Mehan Skills</text>
+  <text x="306" y="136" class="sans" fill="#cbd5e1" font-size="13.5">Portable, single-file AI agent skills crafted for @alamehan workflows</text>
+  <text x="306" y="155" class="sans" fill="#94a3b8" font-size="13.5">Drop into Antigravity, Claude Code, Codex, Cursor, or any AI chat</text>
+
+  <line x1="306" y1="171" x2="892" y2="171" stroke="#1e293b" stroke-width="1"/>
+
+  <g class="mono" font-size="12">
+    <text x="306" y="193"><tspan class="key">TYPE&#160;&#160;&#160;</tspan><tspan class="dim">│&#160;</tspan><tspan class="val">Portable Single-File Agent Skills</tspan></text>
+    <text x="306" y="213"><tspan class="key">FORMAT&#160;</tspan><tspan class="dim">│&#160;</tspan><tspan class="val">1 Self-Contained SKILL.md per Workflow</tspan></text>
+    <text x="306" y="233"><tspan class="key">MOUNT&#160;&#160;</tspan><tspan class="dim">│&#160;</tspan><tspan class="val">Global Auto-Discovery + Direct File Attach</tspan><tspan class="acc cur">&#160;█</tspan></text>
+  </g>
+</svg>
