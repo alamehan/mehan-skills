@@ -14,6 +14,8 @@
   </p>
 </div>
 
+> ⚡ Kumpulan playbook satu-file yang melatih AI coding agent merapikan repo kusut & menulis dokumentasi 2 bahasa yang ramah — crafted by @alamehan
+
 ---
 
 ## Kenapa Mehan Skills Dibuat
@@ -38,7 +40,7 @@ Setiap kali memulai proyek baru atau membuka sesi obrolan AI baru, mengulang sta
 
 - **Cukup Satu File Utuh:** Setiap skill tersimpan lengkap di dalam satu file `SKILL.md` (berisi panduan, cetakan visual, hingga daftar pengecekan akhir) tanpa tercecer ke banyak file tambahan.
 - **Perapihan Repo Tanpa Waswas (`alamehan-repo-tidy`):** Memandu AI mengenali jalur penting lebih dulu, merapikan skrip dan folder yang kusut, memperbarui seluruh tautan kode yang ikut pindah, lalu memastikan aplikasi tetap berjalan mulus.
-- **Dokumentasi Ramah Semua Kalangan (`alamehan-readme`):** Menyusun cerita pembuka yang jernih dan mudah dipahami siapa saja, sambil menyimpan panduan teknis developer secara rapi di dalam laci lipat — lengkap dalam bahasa Inggris dan Indonesia.
+- **Dokumentasi Ramah Semua Kalangan (`alamehan-readme`):** Menyusun cerita pembuka yang jernih dengan tipografi desainer asli (`Bricolage Grotesque` + `Figtree` + `Geist Mono`), kalimat *GitHub About* siap salin, serta panduan teknis developer di dalam laci lipat.
 - **Fleksibel di Semua Alat AI:** Bisa dipasang otomatis secara global di Antigravity, maupun dilampirkan manual sebagai 1 file `.md` di Claude, ChatGPT, Cursor, atau Codex.
 
 ---
@@ -86,8 +88,8 @@ flowchart LR
 | Jalur | Peran |
 |---|---|
 | [`skills/alamehan-repo-tidy/SKILL.md`](./skills/alamehan-repo-tidy/SKILL.md) | Panduan merapikan struktur repositori secara menyeluruh dengan pelacakan referensi dan pembuktian build/tes. |
-| [`skills/alamehan-readme/SKILL.md`](./skills/alamehan-readme/SKILL.md) | Cetakan banner SVG 2.5D `@alamehan`, struktur cerita dua lapis, dan standar kesetaraan 2 bahasa (`EN`/`ID`). |
-| [`assets/`](./assets) | Banner panggung SVG 2.5D `@alamehan` versi Gelap dan Terang. |
+| [`skills/alamehan-readme/SKILL.md`](./skills/alamehan-readme/SKILL.md) | Cetakan banner SVG 2.5D `Porcelain SaaS` berfont desainer asli, kalimat *GitHub About*, dan standar kesetaraan 2 bahasa (`EN`/`ID`). |
+| [`assets/`](./assets) | Banner panggung SVG 2.5D `@alamehan` bertema `Porcelain SaaS` versi Gelap dan Terang. |
 | [`AGENTS.md`](./AGENTS.md) | Aturan baku penambahan skill baru (`1 Skill = 1 SKILL.md`, path universal, dan sinkronisasi katalog 2 bahasa). |
 
 </details>

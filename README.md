@@ -14,6 +14,8 @@
   </p>
 </div>
 
+> ⚡ Single-file playbooks that teach AI coding agents to untangle messy repos & write human-first bilingual docs — crafted by @alamehan
+
 ---
 
 ## Why Mehan Skills Exists
@@ -38,7 +40,7 @@ Every time you start a new project or open a fresh AI chat session, repeating th
 
 - **One File, Complete Clarity:** Every skill is written inside a single `SKILL.md` file with all rules, visual templates, and quality checks included — nothing fragmented across extra folders.
 - **Safe Repository Tidying (`alamehan-repo-tidy`):** Teaches AI agents to lock critical paths first, untangle messy scripts and folders, update every affected reference, and verify that everything still builds and passes tests.
-- **Human-First Bilingual Documentation (`alamehan-readme`):** Guides AI agents to lead with a clear, approachable story for every reader while tucking deep developer setup neatly inside collapsible sections — paired in English and natural Indonesian.
+- **Human-First Bilingual Documentation (`alamehan-readme`):** Guides AI agents to lead with a clear, approachable story, real embedded designer typography (`Bricolage Grotesque` + `Figtree` + `Geist Mono`), and collapsible developer drawers — paired in English and natural Indonesian.
 - **Works Wherever You Work:** Auto-activates globally in local AI IDEs like Antigravity, or works by simply attaching one `.md` file in Claude, ChatGPT, Cursor, or Codex.
 
 ---
@@ -86,8 +88,8 @@ flowchart LR
 | Path | Role |
 |---|---|
 | [`skills/alamehan-repo-tidy/SKILL.md`](./skills/alamehan-repo-tidy/SKILL.md) | Non-destructive repository untangling, symmetric folder grouping, blast-radius reference tracing, and build/test parity verification. |
-| [`skills/alamehan-readme/SKILL.md`](./skills/alamehan-readme/SKILL.md) | Adaptive 2.5D kinetic `@alamehan` SVG header templates, human-first progressive README structure, and `EN`/`ID` parity rules. |
-| [`assets/`](./assets) | Adaptive Dark and Light 2.5D kinetic `@alamehan` SVG showcase banners. |
+| [`skills/alamehan-readme/SKILL.md`](./skills/alamehan-readme/SKILL.md) | Adaptive `Porcelain SaaS` 2.5D kinetic `@alamehan` SVG templates (with embedded designer fonts), GitHub About hook, and progressive `EN`/`ID` README rules. |
+| [`assets/`](./assets) | Adaptive Dark and Light `Porcelain SaaS` 2.5D kinetic `@alamehan` SVG showcase banners. |
 | [`AGENTS.md`](./AGENTS.md) | Authoring rules (`1 Skill = 1 SKILL.md`, clean portable paths, and bilingual catalog sync). |
 
 </details>
@@ -95,7 +97,7 @@ flowchart LR
 <details>
 <summary><strong>🧭 Authoring Rules &amp; Design Boundaries</strong></summary>
 
-- **Strictly Single-File Portability:** Each skill embeds its own templates and checklists inline inside `skills/<slug>/SKILL.md` so it never breaks when shared or attached as a standalone file.
+- **Strictly Single-File Portability:** Each skill embeds its own instructions and checklists inline inside `skills/<slug>/SKILL.md` so it never breaks when shared or attached as a standalone file.
 - **Portable Paths Only:** Snippets use `$PWD` and `$HOME` rather than machine-specific drive paths so cloning works identically on Windows, macOS, and Linux. See [`AGENTS.md`](./AGENTS.md) when adding new skills.
 
 </details>
