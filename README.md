@@ -15,6 +15,8 @@
 </div>
 
 > ⚡ Single-file playbooks that teach AI coding agents to untangle messy repos & write human-first bilingual docs — crafted by @alamehan
+>
+> `ai-agents` `agent-skills` `prompt-engineering` `claude-code` `cursor` `antigravity` `developer-tools` `documentation`
 
 ---
 
@@ -40,7 +42,7 @@ Every time you start a new project or open a fresh AI chat session, repeating th
 
 - **One File, Complete Clarity:** Every skill is written inside a single `SKILL.md` file with all rules, visual templates, and quality checks included — nothing fragmented across extra folders.
 - **Safe Repository Tidying (`alamehan-repo-tidy`):** Teaches AI agents to lock critical paths first, untangle messy scripts and folders, update every affected reference, and verify that everything still builds and passes tests.
-- **Human-First Bilingual Documentation (`alamehan-readme`):** Guides AI agents to lead with a clear, approachable story, real embedded designer typography (`Bricolage Grotesque` + `Figtree` + `Geist Mono`), and collapsible developer drawers — paired in English and natural Indonesian.
+- **Human-First Bilingual Documentation (`alamehan-readme`):** Guides AI agents to lead with a clear, approachable story, real embedded designer typography (`Bricolage Grotesque` + `Figtree` + `Geist Mono`), copy-ready GitHub *About* + *Topics*, and collapsible developer drawers — paired in English and natural Indonesian.
 - **Works Wherever You Work:** Auto-activates globally in local AI IDEs like Antigravity, or works by simply attaching one `.md` file in Claude, ChatGPT, Cursor, or Codex.
 
 ---

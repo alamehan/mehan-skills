@@ -15,6 +15,8 @@
 </div>
 
 > ⚡ Kumpulan playbook satu-file yang melatih AI coding agent merapikan repo kusut & menulis dokumentasi 2 bahasa yang ramah — crafted by @alamehan
+>
+> `ai-agents` `agent-skills` `prompt-engineering` `claude-code` `cursor` `antigravity` `developer-tools` `documentation`
 
 ---
 
@@ -40,7 +42,7 @@ Setiap kali memulai proyek baru atau membuka sesi obrolan AI baru, mengulang sta
 
 - **Cukup Satu File Utuh:** Setiap skill tersimpan lengkap di dalam satu file `SKILL.md` (berisi panduan, cetakan visual, hingga daftar pengecekan akhir) tanpa tercecer ke banyak file tambahan.
 - **Perapihan Repo Tanpa Waswas (`alamehan-repo-tidy`):** Memandu AI mengenali jalur penting lebih dulu, merapikan skrip dan folder yang kusut, memperbarui seluruh tautan kode yang ikut pindah, lalu memastikan aplikasi tetap berjalan mulus.
-- **Dokumentasi Ramah Semua Kalangan (`alamehan-readme`):** Menyusun cerita pembuka yang jernih dengan tipografi desainer asli (`Bricolage Grotesque` + `Figtree` + `Geist Mono`), kalimat *GitHub About* siap salin, serta panduan teknis developer di dalam laci lipat.
+- **Dokumentasi Ramah Semua Kalangan (`alamehan-readme`):** Menyusun cerita pembuka yang jernih dengan tipografi desainer asli (`Bricolage Grotesque` + `Figtree` + `Geist Mono`), deskripsi *GitHub About* + *Topics* siap salin, serta panduan teknis developer di dalam laci lipat.
 - **Fleksibel di Semua Alat AI:** Bisa dipasang otomatis secara global di Antigravity, maupun dilampirkan manual sebagai 1 file `.md` di Claude, ChatGPT, Cursor, atau Codex.
 
 ---

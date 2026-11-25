@@ -4,9 +4,9 @@ description: >-
   Author warm, human-first, bilingual GitHub documentation (README.md in English +
   README.id.md in natural Indonesian) paired with adaptive Dark/Light Porcelain SaaS
   2.5D kinetic @alamehan showcase SVG banners (with embedded Bricolage Grotesque,
-  Figtree & Geist Mono designer fonts), a copy-ready GitHub About 1-liner, and
-  collapsible <details> developer drawers. Activate when asked to create, standardize,
-  or upgrade a repository README in the @alamehan style.
+  Figtree & Geist Mono designer fonts), a copy-ready GitHub About 1-liner + 1-paste
+  GitHub Topics pills, and collapsible <details> developer drawers. Activate when
+  asked to create, standardize, or upgrade a repository README in the @alamehan style.
 ---
 
 # `@alamehan` Universal GitHub README Standard (`alamehan-readme` · V3)
@@ -21,10 +21,11 @@ Every `@alamehan` repository shares one unified visual and editorial signature a
    - Uses the canonical `@alamehan` **Porcelain SaaS** palette: crisp architectural porcelain-white (`#ffffff` → `#f1f6fc`) & slate-blue (`#2563eb`) in Light mode, and deep midnight slate (`#162138` → `#0d1424`) & luminous sapphire (`#60a5fa`) in Dark mode.
    - Features the **real 2.5D animated `@alamehan` hardware keycap** (3.2s spring choreography: floating porcelain L-frame, staggered 3-blade mechanical wave, popping jewel orb, expanding ripple ring, and rotating 4-point spark).
    - **Real Designer Typography Embedded Inside the SVG (`data:font/woff2;base64,...`):** Never let headlines fall back to generic OS fonts (`Segoe UI` / `Arial`). Embed **`Bricolage Grotesque`** (`800` Display Title), **`Figtree`** (`500–600` Subtitle & 2.5D Tactile Pills), and **`Geist Mono`** (`600` Eyebrow Badge & `COMPLEX → SIMPLE`) directly inside the SVG `<style>` so GitHub renders authentic designer typography on every OS with zero external network calls.
-2. **Copy-Ready GitHub `"About"` One-Liner (`[Emoji] [Hook] — crafted by @alamehan`):**
-   - Right below the Hero Banner and Language/Action Bar, place **one punchy single-sentence blockquote** (`115–150` characters):
-     `> [1 Relevant Domain Emoji] [Magnetic human hook summarizing the entire project] — crafted by @alamehan`
-   - Serves two purposes simultaneously: (a) gives README visitors an instant 5-second elevator pitch, and (b) gives the owner a verbatim 1-line description to copy-paste straight into GitHub's top-right **`About ⚙️ -> Description`** box (powering GitHub Profile pinned cards and social link previews!).
+2. **Copy-Ready GitHub `"About"` One-Liner + 1-Paste `"Topics"` Pills:**
+   - Right below the Hero Banner and Language/Action Bar, place a two-paragraph opening blockquote:
+     - **Line 1 (`About -> Description`):** `> [1 Relevant Domain Emoji] [Magnetic human hook summarizing the entire project] — crafted by @alamehan` (`115–150` chars).
+     - **Line 2 (`About -> Topics`, separated by a blank `>` line):** `> \`topic-1\` \`topic-2\` \`topic-3\` \`topic-4\` \`topic-5\` \`topic-6\` \`topic-7\`` (`6–8` lowercase-hyphenated slugs separated **only by single spaces** — never middle dots or commas).
+   - Serves two purposes simultaneously: (a) renders for README visitors as a crisp 5-second elevator pitch over subtle rounded pill chips, and (b) lets the owner copy Line 1 into **`About ⚙️ -> Description`** and copy-paste Line 2 straight into **`About ⚙️ -> Topics`** (where GitHub automatically splits space-separated slugs into blue Topic chips in **one single paste**!).
 3. **Two-Layer Progressive Reading Flow (`All-HR / Balanced` Open + `Specialist` Closed):**
    - **Open Upper Page (For Everyone):** Zero terminal commands, zero code blocks, and zero dense acronyms. Tell the human story in 2 warm paragraphs, show how to try/explore with zero setup, and list 4–5 concrete benefit highlights.
    - **Closed `<details>` Drawers (For Developers & AI Agents):** Tuck installation commands, CLI flags, preset/API tables, Mermaid architecture diagrams, directory maps, and trade-offs inside **3 closed `<details>` accordions** above the author footer.
@@ -106,11 +107,14 @@ To embed real designer fonts (`Bricolage Grotesque`, `Figtree`, `Geist Mono`) wi
      </p>
    </div>
    ```
-2. **Copy-Ready GitHub `"About"` One-Liner (Single-Sentence Hook Blockquote):**
+2. **Copy-Ready GitHub `"About"` One-Liner + 1-Paste `"Topics"` Pills:**
    ```markdown
    > 🎨 {{Punchy 1-sentence hook summarizing the whole project in <= 150 chars}} — crafted by @alamehan
+   >
+   > `{{topic-1}}` `{{topic-2}}` `{{topic-3}}` `{{topic-4}}` `{{topic-5}}` `{{topic-6}}` `{{topic-7}}`
    ```
-   *(Pick 1 domain-relevant leading emoji: e.g. `🎨` Design System, `⚡` Agent Skills / CLI, `✨` Portfolio / Creative Studio, `🧭` Productivity / Docs, `🛠️` Developer Tool. Always end with `— crafted by @alamehan` so GitHub's About sidebar, pinned profile cards, and social previews carry the `@alamehan` signature.)*
+   - **About Hook Rules:** Pick 1 domain-relevant leading emoji (e.g. `🎨` Design System, `⚡` Agent Skills / CLI, `✨` Portfolio / Creative Studio, `🧭` Productivity / Docs, `🛠️` Developer Tool) and end with `— crafted by @alamehan`.
+   - **GitHub Topics Rules:** Curate `6–8` high-signal search slugs matching GitHub's strict topic grammar (`^[a-z0-9][a-z0-9-]{0,49}$` — lowercase letters, digits, and hyphens only). Separate inline code pills **only with single spaces** after a blank `>` line so triple-clicking/copying the second line pastes cleanly into GitHub's `About ⚙️ -> Topics` input and splits into chips in 1 paste. Keep the exact same English topic slugs in `README.id.md`.
 3. **Warm Human Story (`## Why {{Short Name}} Exists` / `## Kenapa {{Short Name}} Dibuat`):**
    - **2 short, vivid paragraphs** in everyday language: (1) the real human problem, and (2) the smart Product Design + Engineering approach and how it feels to use.
 4. **Try or Explore Without Setup (`## Try It Right Now` / `## Langsung Coba Sekarang`):**
@@ -144,6 +148,6 @@ Under `## For Developers & Technical Details` (`## Detail Teknis & Panduan Devel
 ## 5. Mandatory Verification Checklist
 
 1. **Typography & Palette Proof:** Confirm `Bricolage Grotesque`, `Figtree`, and `Geist Mono` WOFF2 data URIs are embedded inside both SVGs and use the crisp `Porcelain SaaS` Light/Dark palette.
-2. **GitHub `"About"` Check:** Confirm the opening `> [Emoji] ... — crafted by @alamehan` line is a single sentence (~115–155 chars) ready to paste straight into GitHub's `About` description.
+2. **GitHub `"About"` & `"Topics"` Check:** Confirm Line 1 of the opening blockquote is a single sentence (`~115–155` chars) ending in `— crafted by @alamehan`, followed after a blank `>` line by `6–8` space-separated inline code topic slugs matching `^[a-z0-9][a-z0-9-]{0,49}$` (identical across `README.md` and `README.id.md`).
 3. **Strict `<details>` & Link Check:** Verify blank lines around `</summary>` and `</details>`, valid relative links, and strict XML entity escaping across all SVGs.
 4. **Full-Page Light & Dark Visual QA:** Render both Light and Dark README pages in headless Chromium via Playwright and inspect the `.png` screenshots before committing.
