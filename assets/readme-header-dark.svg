@@ -1,77 +1,183 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 264" width="920" height="264" role="img" aria-label="Mehan Skills — @alamehan console banner">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 236" width="920" height="236" fill="none" role="img" aria-label="Mehan Skills — @alamehan 2.5D kinetic banner">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1322"/>
-      <stop offset="100%" stop-color="#090d16"/>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="920" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#111827"/><stop offset="55%" stop-color="#0b101d"/><stop offset="100%" stop-color="#080c16"/>
     </linearGradient>
-    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+    <radialGradient id="stageAura" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(118 118) scale(118)">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="kcFace" x1="12" y1="6" x2="84" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="52%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="kcWell" x1="16" y1="12" x2="80" y2="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#090e1a"/>
+      <stop offset="100%" stop-color="#152036"/>
+    </linearGradient>
+    <radialGradient id="kcGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(34)">
       <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.38"/>
       <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="pTop" x1="24" y1="20" x2="68" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="pWall" x1="24" y1="22" x2="70" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="jewelGrad" x1="-5" y1="-5" x2="6" y2="6" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="45%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
     <style>
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
       .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-      .f  { fill: #e2e8f0; font-weight: 700; }
-      .w  { fill: #64748b; }
-      .b1 { fill: #f8fafc; font-weight: 700; }
-      .b2 { fill: #cbd5e1; font-weight: 700; }
-      .b3 { fill: #94a3b8; font-weight: 700; }
-      .orb { fill: #60a5fa; font-weight: 700; }
-      .dim { fill: #64748b; }
-      .key { fill: #94a3b8; font-weight: 600; }
-      .val { fill: #e2e8f0; }
-      .acc { fill: #60a5fa; font-weight: 700; }
-      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
-      @keyframes pulse { 0%, 100% { opacity: 0.76; } 50% { opacity: 1; } }
-      .cur { animation: blink 1.15s steps(1) infinite; }
-      .glow { animation: pulse 3.2s ease-in-out infinite; }
-      @media (prefers-reduced-motion: reduce) { .cur, .glow { animation: none; } }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .alm-glow  { animation: glowPulse 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+      .alm-frame { animation: frameFloat 3.2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite; }
+      .alm-b1    { animation: bladeWave1 3.2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite; }
+      .alm-b2    { animation: bladeWave2 3.2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite; }
+      .alm-b3    { animation: bladeWave3 3.2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite; }
+      .alm-orb   { animation: orbPop 3.2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite; }
+      .alm-ring  { animation: orbRipple 3.2s cubic-bezier(0.16, 1, 0.3, 1) infinite; }
+      .alm-spark { animation: sparkGlint 3.2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite; }
+      .mote-a    { animation: moteFloat 4.6s ease-in-out infinite; }
+      .mote-b    { animation: moteFloat 4.6s ease-in-out 2.3s infinite; }
+      @keyframes glowPulse {
+        0%, 100% { transform: scale(1); opacity: 0.72; }
+        56% { transform: scale(1.18); opacity: 1; }
+      }
+      @keyframes frameFloat {
+        0%, 100% { transform: translate(0px, 0px); }
+        12% { transform: translate(0px, 1.2px); }
+        32% { transform: translate(0px, -1.6px); }
+        68% { transform: translate(0px, -1px); }
+      }
+      @keyframes bladeWave1 {
+        0%, 100% { transform: translate(0px, 0px); }
+        18% { transform: translate(-2.6px, -2.8px); }
+        38% { transform: translate(0.8px, 0.8px); }
+        68% { transform: translate(0px, -1px); }
+      }
+      @keyframes bladeWave2 {
+        0%, 8%, 100% { transform: translate(0px, 0px); }
+        26% { transform: translate(-2.8px, -2.8px); }
+        46% { transform: translate(0.8px, 0.8px); }
+        72% { transform: translate(0px, -1px); }
+      }
+      @keyframes bladeWave3 {
+        0%, 16%, 100% { transform: translate(0px, 0px); }
+        34% { transform: translate(-3px, -2.8px); }
+        52% { transform: translate(1px, 0.8px); }
+        76% { transform: translate(0px, -1px); }
+      }
+      @keyframes orbPop {
+        0%, 42%, 100% { transform: scale(1); }
+        49% { transform: scale(0.82); }
+        58% { transform: scale(1.26); }
+        72% { transform: scale(0.95); }
+        84% { transform: scale(1.03); }
+      }
+      @keyframes orbRipple {
+        0%, 50%, 100% { transform: scale(0.65); opacity: 0; }
+        56% { transform: scale(1.05); opacity: 0.88; }
+        82% { transform: scale(2.3); opacity: 0; }
+      }
+      @keyframes sparkGlint {
+        0%, 50%, 84%, 100% { transform: scale(0) rotate(0deg); opacity: 0; }
+        62% { transform: scale(1.18) rotate(45deg); opacity: 1; }
+        76% { transform: scale(0.4) rotate(90deg); opacity: 0; }
+      }
+      @keyframes moteFloat {
+        0%, 100% { transform: translate(0px, 0px); opacity: 0.45; }
+        50% { transform: translate(0px, -5px); opacity: 0.95; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .alm-glow, .alm-frame, .alm-b1, .alm-b2, .alm-b3, .alm-orb, .alm-ring, .alm-spark, .mote-a, .mote-b { animation: none !important; }
+      }
     </style>
   </defs>
 
-  <!-- Outer Terminal Window -->
-  <rect x="2" y="2" width="916" height="260" rx="16" fill="url(#bg)" stroke="#1e293b" stroke-width="1.5"/>
-  <path d="M2 18C2 9.16 9.16 2 18 2H902C910.84 2 918 9.16 918 18V40H2V18Z" fill="#111827"/>
-  <line x1="2" y1="40" x2="918" y2="40" stroke="#1e293b" stroke-width="1"/>
+  <!-- Outer Showcase Card -->
+  <rect x="2" y="2" width="916" height="232" rx="22" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5"/>
+  <path d="M28 3.5H892" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1"/>
+  <circle cx="118" cy="118" r="112" fill="url(#stageAura)"/>
 
-  <!-- Window Controls and Title Bar -->
-  <circle cx="24" cy="21" r="5.5" fill="#ef4444" opacity="0.85"/>
-  <circle cx="42" cy="21" r="5.5" fill="#f59e0b" opacity="0.85"/>
-  <circle cx="60" cy="21" r="5.5" fill="#10b981" opacity="0.85"/>
-  <text x="460" y="25" text-anchor="middle" class="mono dim" font-size="12">@alamehan&#160;·&#160;console&#160;—&#160;mehan-skills</text>
-  <text x="896" y="25" text-anchor="end" class="mono acc" font-size="11">COMPLEX&#160;-&gt;&#160;SIMPLE</text>
+  <!-- Left Stage Pedestal and Ambient Motes -->
+  <rect x="38" y="38" width="160" height="160" rx="36" fill="#080d18" fill-opacity="0.70" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="52" cy="54" r="2.5" fill="#60a5fa" class="mote-a"/>
+  <circle cx="184" cy="182" r="2" fill="#93c5fd" class="mote-b"/>
 
-  <!-- Left Stage: Recessed ASCII Monogram Well -->
-  <rect x="24" y="56" width="256" height="188" rx="12" fill="#070a12" stroke="#1e293b" stroke-width="1"/>
-  <circle cx="212" cy="206" r="42" fill="url(#orbGlow)" class="glow"/>
-  <g class="mono" font-size="11.5">
-    <text x="54" y="77"><tspan class="f">&#160;&#160;&#160;:=++++++++++++++++++-.&#160;&#160;&#160;</tspan></text>
-    <text x="54" y="90"><tspan class="f">&#160;&#160;*@@@@@@@@@@@@@@@@@@@@@@-&#160;&#160;</tspan></text>
-    <text x="54" y="103"><tspan class="f">&#160;:@@@@@@@@@@@@@@@@@@@@@@@@&#160;&#160;</tspan></text>
-    <text x="54" y="116"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b1">::+&#160;&#160;&#160;&#160;</tspan></text>
-    <text x="54" y="129"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b1">:*%@@%:&#160;&#160;&#160;&#160;</tspan></text>
-    <text x="54" y="142"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b1">:%@@%*:&#160;&#160;&#160;&#160;&#160;&#160;</tspan></text>
-    <text x="54" y="155"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b2">+**+-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan></text>
-    <text x="54" y="168"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="b2">.+%@@@+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan></text>
-    <text x="54" y="181"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;&#160;</tspan><tspan class="b2">+@@%*=.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan></text>
-    <text x="54" y="194"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;&#160;&#160;</tspan><tspan class="b3">:+*++-</tspan><tspan>&#160;&#160;&#160;&#160;</tspan><tspan class="orb">.=++=:&#160;&#160;</tspan></text>
-    <text x="54" y="207"><tspan class="f">&#160;:@@@@+</tspan><tspan>&#160;</tspan><tspan class="b3">-#@@@#:</tspan><tspan>&#160;&#160;&#160;&#160;</tspan><tspan class="orb">:%@@@@@-&#160;</tspan></text>
-    <text x="54" y="220"><tspan class="f">&#160;&#160;*@@@*</tspan><tspan class="b3">%@%#=:&#160;</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="orb">#@@@@%:&#160;</tspan></text>
-    <text x="54" y="233"><tspan class="w">&#160;&#160;&#160;:=+=:</tspan><tspan>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan><tspan class="orb">.:::&#160;&#160;&#160;</tspan></text>
+  <!-- 2.5D Kinetic @alamehan Hardware Keycap Emblem -->
+  <g transform="translate(51.8, 51.8) scale(1.38)">
+    <rect x="4" y="7.5" width="88" height="84.5" rx="22" fill="#03060d"/>
+    <rect x="4" y="4" width="88" height="84" rx="22" fill="url(#kcFace)" stroke="#334155" stroke-width="1.2"/>
+    <rect x="9" y="9" width="78" height="74" rx="17" fill="url(#kcWell)" stroke="#1e293b" stroke-width="1"/>
+    <path d="M20 5.5H76" stroke="#94a3b8" stroke-width="1.3" stroke-linecap="round" opacity="0.42"/>
+    <g transform="translate(54, 54)"><circle cx="0" cy="0" r="32" fill="url(#kcGlow)" class="alm-glow"/></g>
+
+    <g class="alm-frame">
+      <path d="M33.49 22.87H61.98C66.93 22.87 70.94 26.88 70.94 31.82H33.49V77.82C28.54 77.82 24.53 73.81 24.53 68.86V31.82C24.53 26.88 28.54 22.87 33.49 22.87Z" fill="url(#pWall)"/>
+      <path d="M33.49 20.27H61.98C66.93 20.27 70.94 24.28 70.94 29.22H33.49V75.22C28.54 75.22 24.53 71.21 24.53 66.26V29.22C24.53 24.28 28.54 20.27 33.49 20.27Z" fill="url(#pTop)"/>
+    </g>
+    <g class="alm-b1">
+      <path d="M51.07 47.46C53.98 42.48 61.03 38.44 66.80 38.44L64.46 42.45C61.54 47.43 54.50 51.47 48.73 51.47L51.07 47.46Z" fill="url(#pWall)"/>
+      <path d="M51.07 45.16C53.98 40.18 61.03 36.14 66.80 36.14L64.46 40.15C61.54 45.13 54.50 49.17 48.73 49.17L51.07 45.16Z" fill="url(#pTop)"/>
+    </g>
+    <g class="alm-b2">
+      <path d="M43.45 60.50C46.37 55.51 53.41 51.47 59.19 51.47L56.86 55.46C53.94 60.45 46.89 64.49 41.11 64.49L43.45 60.50Z" fill="url(#pWall)"/>
+      <path d="M43.45 58.20C46.37 53.21 53.41 49.17 59.19 49.17L56.86 53.16C53.94 58.15 46.89 62.19 41.11 62.19L43.45 58.20Z" fill="url(#pTop)"/>
+    </g>
+    <g class="alm-b3">
+      <path d="M35.83 73.52C38.74 68.54 45.79 64.49 51.56 64.49L49.22 68.49C46.31 73.48 39.26 77.52 33.49 77.52L35.83 73.52Z" fill="url(#pWall)"/>
+      <path d="M35.83 71.22C38.74 66.24 45.79 62.19 51.56 62.19L49.22 66.19C46.31 71.18 39.26 75.22 33.49 75.22L35.83 71.22Z" fill="url(#pTop)"/>
+    </g>
+
+    <g transform="translate(65.54, 69.73)">
+      <circle cx="0" cy="0" r="6.2" stroke="#60a5fa" stroke-width="2" class="alm-ring"/>
+      <circle cx="0" cy="2.3" r="5.7" fill="#050811" opacity="0.65"/>
+      <g class="alm-orb">
+        <circle cx="0" cy="0" r="5.7" fill="url(#jewelGrad)"/>
+        <circle cx="-1.84" cy="-1.83" r="1.75" fill="#ffffff" opacity="0.9"/>
+      </g>
+    </g>
+    <g transform="translate(72.5, 62.5)">
+      <path d="M0 -3.8L1 -1L3.8 0L1 1L0 3.8L-1 1L-3.8 0L-1 -1Z" fill="#93c5fd" class="alm-spark"/>
+    </g>
   </g>
 
-  <!-- Right Stage: Command Prompt and Identity Readout -->
-  <text x="306" y="76" class="mono" font-size="12.5"><tspan class="acc">❯</tspan><tspan class="val">&#160;alamehan&#160;inspect&#160;</tspan><tspan class="acc">mehan-skills</tspan><tspan class="dim">&#160;--lang=en,id</tspan></text>
+  <!-- Right Editorial Stage -->
+  <rect x="232" y="38" width="199" height="24" rx="12" fill="#111f38" stroke="#1e3a6d" stroke-width="1"/>
+  <text x="245" y="54" class="mono" fill="#60a5fa" font-size="11" font-weight="700" letter-spacing="0.03em">@alamehan&#160;·&#160;AGENT SKILLS</text>
+  <text x="884" y="54" text-anchor="end" class="mono" fill="#64748b" font-size="11" font-weight="600" letter-spacing="0.04em">COMPLEX&#160;→&#160;SIMPLE</text>
 
-  <text x="306" y="112" class="sans" fill="#f8fafc" font-size="26" font-weight="800" letter-spacing="-0.02em">Mehan Skills</text>
-  <text x="306" y="136" class="sans" fill="#cbd5e1" font-size="13.5">Portable, single-file AI agent skills crafted for @alamehan workflows</text>
-  <text x="306" y="155" class="sans" fill="#94a3b8" font-size="13.5">Drop into Antigravity, Claude Code, Codex, Cursor, or any AI chat</text>
+  <text x="232" y="99" class="sans" fill="#f8fafc" font-size="30" font-weight="800" letter-spacing="-0.025em">Mehan Skills</text>
+  <text x="232" y="127" class="sans" fill="#cbd5e1" font-size="14.5">Reusable, single-file playbooks that teach AI coding agents how @alamehan</text>
+  <text x="232" y="149" class="sans" fill="#94a3b8" font-size="14.5">organizes repositories, polishes interfaces, and writes clear documentation.</text>
 
-  <line x1="306" y1="171" x2="892" y2="171" stroke="#1e293b" stroke-width="1"/>
+  <!-- 3 Tactile 2.5D Feature Pills -->
+  <g transform="translate(232, 170)">
+    <rect x="0" y="2" width="202" height="28" rx="9" fill="#04070f"/>
+    <rect x="0" y="0" width="202" height="28" rx="9" fill="#131c2e" stroke="#26334d" stroke-width="1"/>
+    <circle cx="14" cy="14" r="3.2" fill="#60a5fa"/>
+    <text x="24" y="18" class="sans" fill="#e2e8f0" font-size="12" font-weight="600">1 Skill = 1 Portable .md</text>
 
-  <g class="mono" font-size="12">
-    <text x="306" y="193"><tspan class="key">TYPE&#160;&#160;&#160;</tspan><tspan class="dim">│&#160;</tspan><tspan class="val">Portable Single-File Agent Skills</tspan></text>
-    <text x="306" y="213"><tspan class="key">FORMAT&#160;</tspan><tspan class="dim">│&#160;</tspan><tspan class="val">1 Self-Contained SKILL.md per Workflow</tspan></text>
-    <text x="306" y="233"><tspan class="key">MOUNT&#160;&#160;</tspan><tspan class="dim">│&#160;</tspan><tspan class="val">Global Auto-Discovery + Direct File Attach</tspan><tspan class="acc cur">&#160;█</tspan></text>
+    <g transform="translate(212, 0)">
+      <rect x="0" y="2" width="174" height="28" rx="9" fill="#04070f"/>
+      <rect x="0" y="0" width="174" height="28" rx="9" fill="#131c2e" stroke="#26334d" stroke-width="1"/>
+      <circle cx="14" cy="14" r="3.2" fill="#60a5fa"/>
+      <text x="24" y="18" class="sans" fill="#e2e8f0" font-size="12" font-weight="600">Works in Any AI Chat</text>
+    </g>
+
+    <g transform="translate(396, 0)">
+      <rect x="0" y="2" width="181" height="28" rx="9" fill="#04070f"/>
+      <rect x="0" y="0" width="181" height="28" rx="9" fill="#131c2e" stroke="#26334d" stroke-width="1"/>
+      <circle cx="14" cy="14" r="3.2" fill="#60a5fa"/>
+      <text x="24" y="18" class="sans" fill="#e2e8f0" font-size="12" font-weight="600">Global Auto-Discovery</text>
+    </g>
   </g>
 </svg>

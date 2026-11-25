@@ -2,55 +2,57 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/readme-header-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/readme-header-light.svg" />
-    <img alt="Mehan Skills — @alamehan console banner" src="./assets/readme-header-light.svg" width="100%" />
+    <img alt="Mehan Skills — @alamehan 2.5D kinetic banner" src="./assets/readme-header-light.svg" width="100%" />
   </picture>
 
   <p>
     <a href="./README.md">← English</a> · <strong>Bahasa Indonesia</strong>
-    &nbsp;|&nbsp;
-    <a href="./skills">Daftar Skill</a> ·
-    <a href="./AGENTS.md">Aturan Penulisan</a> ·
-    <a href="https://alamehan.github.io">alamehan.github.io</a> ·
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    <a href="./skills"><strong>✨ Lihat Daftar Skill</strong></a> ·
+    <a href="https://alamehan.github.io">Portfolio</a> ·
     <a href="./LICENSE">Lisensi MIT</a>
   </p>
 </div>
 
-> [!TIP]
-> **`mehan-skills`** adalah repositori khusus kumpulan *skill* AI agent portable karya **[M. Raihan Rafiiful Allaam (`@alamehan`)](https://alamehan.github.io)**. Setiap alur kerja ditulis utuh dalam **1 file `SKILL.md` mandiri** — otomatis terbaca lintas workspace di Antigravity, sekaligus siap dilampirkan langsung ke Claude, ChatGPT, Cursor, atau Codex.
+---
 
-| Tujuanmu | Mulai dari Sini |
+## Kenapa Mehan Skills Dibuat
+
+Setiap kali memulai proyek baru atau membuka sesi obrolan AI baru, mengulang standar kerja yang sama — bagaimana merapikan isi folder proyek tanpa merusak fitur yang sudah jalan, atau bagaimana menyusun dokumentasi yang enak dibaca semua orang — memakan banyak waktu dan sering melenceng kalau aturannya hanya tersimpan di riwayat chat lama.
+
+**Mehan Skills** merangkum alur kerja Product Design dan Product Engineering dari **[M. Raihan Rafiiful Allaam (`@alamehan`)](https://alamehan.github.io)** ke dalam **buku panduan satu file yang praktis**. Setiap skill berdiri utuh di dalam satu file `.md` yang bisa langsung terbaca otomatis di seluruh ruang kerjamu, atau cukup dilampirkan kapan saja di chat AI pilihanmu.
+
+---
+
+## Langsung Lihat & Coba Sekarang
+
+| Apa yang ingin kamu lakukan | Buka bagian ini |
 |---|---|
-| **Merapikan repo kusut secara menyeluruh tanpa merusak build** | Buka **[`skills/alamehan-repo-tidy/SKILL.md`](./skills/alamehan-repo-tidy/SKILL.md)** |
-| **Membuat `README` GitHub 2 bahasa beridentitas `@alamehan`** | Buka **[`skills/alamehan-readme/SKILL.md`](./skills/alamehan-readme/SKILL.md)** |
-| **Menghubungkan seluruh skill secara global di perangkatmu** | Lompat ke **[Mulai dalam 30 Detik](#mulai-dalam-30-detik)** |
-| **Menambah atau merawat skill baru di repositori ini** | Baca **[`AGENTS.md`](./AGENTS.md)** |
+| **Merapikan struktur folder proyek yang berantakan tanpa bikin error** | Buka **[`alamehan-repo-tidy`](./skills/alamehan-repo-tidy/SKILL.md)** |
+| **Membuat halaman depan GitHub 2 bahasa yang ramah & beranimasi 2.5D** | Buka **[`alamehan-readme`](./skills/alamehan-readme/SKILL.md)** |
+| **Melihat karya produk, design system & studi kasus `@alamehan` lainnya** | Kunjungi **[alamehan.github.io](https://alamehan.github.io)** |
 
 ---
 
-## Kenapa `mehan-skills` Dibuat
+## Keunggulan Utama
 
-Mengulang instruksi standar rekayasa yang kompleks di banyak repositori — seperti cara merapikan struktur folder kusut dengan aman, atau cara menyusun dokumentasi GitHub dua bahasa berbanner SVG adaptif — memakan waktu dan mudah melenceng jika hanya mengandalkan ingatan obrolan chat.
-
-**`mehan-skills`** membungkus standar kerja dan desain khas `@alamehan` menjadi **buku panduan `SKILL.md` satu file tanpa dependensi** yang terkelola rapi di satu tempat dan siap dijalankan di lingkungan AI coding mana pun.
-
----
-
-## Daftar Skill Saat Ini
-
-| Skill | File | Fungsi Utama |
-|---|---|---|
-| **`alamehan-repo-tidy`** | [`skills/alamehan-repo-tidy/SKILL.md`](./skills/alamehan-repo-tidy/SKILL.md) | Memetakan jalur krusial framework, CI, dan ekspor lebih dulu, mengurai skrip silang antar-paket, menata pohon folder `src/` & `tests/` secara simetris, memperbarui 100% referensi yang terdampak, dan membuktikan semua build & tes tetap hijau. |
-| **`alamehan-readme`** | [`skills/alamehan-readme/SKILL.md`](./skills/alamehan-readme/SKILL.md) | Menghasilkan banner SVG ASCII `@alamehan · Console` otomatis Gelap/Terang (`assets/readme-header-dark.svg` & `assets/readme-header-light.svg`) beserta dokumentasi setara `README.md` (Inggris) dan `README.id.md` (Indonesia natural) untuk jenis repo apa pun. |
+- **Cukup Satu File Utuh:** Setiap skill tersimpan lengkap di dalam satu file `SKILL.md` (berisi panduan, cetakan visual, hingga daftar pengecekan akhir) tanpa tercecer ke banyak file tambahan.
+- **Perapihan Repo Tanpa Waswas (`alamehan-repo-tidy`):** Memandu AI mengenali jalur penting lebih dulu, merapikan skrip dan folder yang kusut, memperbarui seluruh tautan kode yang ikut pindah, lalu memastikan aplikasi tetap berjalan mulus.
+- **Dokumentasi Ramah Semua Kalangan (`alamehan-readme`):** Menyusun cerita pembuka yang jernih dan mudah dipahami siapa saja, sambil menyimpan panduan teknis developer secara rapi di dalam laci lipat — lengkap dalam bahasa Inggris dan Indonesia.
+- **Fleksibel di Semua Alat AI:** Bisa dipasang otomatis secara global di Antigravity, maupun dilampirkan manual sebagai 1 file `.md` di Claude, ChatGPT, Cursor, atau Codex.
 
 ---
 
-## Mulai dalam 30 Detik
+## Detail Teknis & Panduan Developer
 
-### 1. Aktif Otomatis di Semua Proyek (Antigravity / Gemini)
-Kloning repositori ini di mana saja pada perangkatmu, lalu hubungkan `./skills` satu kali ke `~/.gemini/config/skills` agar setiap skill otomatis aktif di seluruh workspace lokalmu:
+<details>
+<summary><strong>🛠️ Cara Pasang Cepat — Aktif Otomatis Global &amp; Lampiran Manual</strong></summary>
+
+### Cara 1 · Aktif Otomatis di Semua Proyek Lokal (Antigravity / Gemini)
+Kloning repositori ini satu kali, lalu hubungkan folder `./skills` ke `~/.gemini/config/skills` agar seluruh skill otomatis aktif di setiap proyekmu:
 
 ```powershell
-# Windows (PowerShell — jalankan di dalam folder mehan-skills, tanpa perlu akses Admin)
+# Windows PowerShell (tanpa perlu akses Administrator)
 git clone https://github.com/alamehan/mehan-skills.git
 cd mehan-skills
 New-Item -ItemType Junction -Path "$HOME\.gemini\config\skills" -Target "$PWD\skills"
@@ -63,44 +65,41 @@ cd mehan-skills
 ln -s "$PWD/skills" "$HOME/.gemini/config/skills"
 ```
 
-### 2. Lampirkan Manual 1 File (Claude Web, ChatGPT, Cursor, Codex)
-Unduh atau lampirkan langsung 1 file `SKILL.md` dari folder [`skills/`](./skills) bersama repo targetmu, lalu minta AI menjalankannya.
+### Cara 2 · Lampirkan Manual 1 File (Claude Web, ChatGPT, Cursor, Codex)
+Lampirkan langsung 1 file `SKILL.md` dari folder [`skills/`](./skills) bersama repositori targetmu, lalu minta AI menjalankan panduannya.
 
----
+</details>
 
-## Peta Arsitektur & Struktur Folder
+<details>
+<summary><strong>🏗️ Katalog Skill, Peta Arsitektur &amp; Struktur Folder</strong></summary>
 
 ```mermaid
 flowchart LR
-  repo["mehan-skills<br/>Gudang Utama Skill"] --> s1["skills/alamehan-repo-tidy/SKILL.md"]
-  repo --> s2["skills/alamehan-readme/SKILL.md"]
-  repo --> sn["skills/<skill-berikutnya>/SKILL.md"]
-  s1 --> agy["~/.gemini/config/skills<br/>(Aktif Otomatis Global)"]
-  s2 --> agy
-  sn --> agy
+  vault["mehan-skills<br/>Gudang Skill Satu-File"] --> tidy["skills/alamehan-repo-tidy/SKILL.md"]
+  vault --> rdm["skills/alamehan-readme/SKILL.md"]
+  vault --> next["skills/<skill-berikutnya>/SKILL.md"]
+  tidy --> global["~/.gemini/config/skills<br/>(Aktif Otomatis Global)"]
+  rdm --> global
+  next --> global
 ```
 
 | Jalur | Peran |
 |---|---|
-| [`skills/alamehan-repo-tidy/`](./skills/alamehan-repo-tidy) | Skill perapihan struktur repositori anti-rusak dengan pelacakan referensi menyeluruh. |
-| [`skills/alamehan-readme/`](./skills/alamehan-readme) | Skill standar header SVG `@alamehan · Console` & dokumentasi GitHub 2 bahasa (`EN`/`ID`). |
-| [`assets/`](./assets) | Banner SVG ASCII `@alamehan · Console` versi Gelap & Terang untuk repositori ini. |
-| [`AGENTS.md`](./AGENTS.md) | Aturan baku penulisan skill (`1 Skill = 1 SKILL.md`, kebersihan path publik, dan sinkronisasi 2 bahasa). |
+| [`skills/alamehan-repo-tidy/SKILL.md`](./skills/alamehan-repo-tidy/SKILL.md) | Panduan merapikan struktur repositori secara menyeluruh dengan pelacakan referensi dan pembuktian build/tes. |
+| [`skills/alamehan-readme/SKILL.md`](./skills/alamehan-readme/SKILL.md) | Cetakan banner SVG 2.5D `@alamehan`, struktur cerita dua lapis, dan standar kesetaraan 2 bahasa (`EN`/`ID`). |
+| [`assets/`](./assets) | Banner panggung SVG 2.5D `@alamehan` versi Gelap dan Terang. |
+| [`AGENTS.md`](./AGENTS.md) | Aturan baku penambahan skill baru (`1 Skill = 1 SKILL.md`, path universal, dan sinkronisasi katalog 2 bahasa). |
 
----
+</details>
 
 <details>
-<summary><strong>Ruang Lingkup &amp; Batasan Desain</strong></summary>
+<summary><strong>🧭 Aturan Penulisan Skill &amp; Batasan Desain</strong></summary>
 
-- **Murni 1 File per Skill:** Setiap skill di `skills/<slug>/SKILL.md` menyertakan langsung cetakan dan daftar periksanya di dalam satu file yang sama tanpa file pecahan luar, sehingga tetap 100% praktis baik untuk auto-discovery lokal maupun lampiran manual di chat web.
-- **Bebas Path Spesifik Komputer:** Seluruh perintah menggunakan variabel standar `$PWD` dan `$HOME` agar langsung jalan di Windows, macOS, maupun Linux.
+- **Murni 1 File per Skill:** Seluruh cetakan dan daftar periksa disertakan langsung di dalam `skills/<slug>/SKILL.md` agar tidak pernah rusak saat dibagikan atau dilampirkan ke chat web.
+- **Bebas Path Spesifik Perangkat:** Semua contoh perintah memakai `$PWD` dan `$HOME` agar berjalan seragam di Windows, macOS, dan Linux. Baca [`AGENTS.md`](./AGENTS.md) saat ingin menambah skill baru.
 
 </details>
 
 ---
 
-## Pembuat & Lisensi
-
-Dirancang dan dibangun sepenuh hati oleh **[M. Raihan Rafiiful Allaam (`@alamehan`)](https://alamehan.github.io)** — *Product Designer & Product Engineer*.
-
-Lisensi MIT — lihat [LICENSE](./LICENSE).
+Dirancang dan dibangun sepenuh hati oleh **[M. Raihan Rafiiful Allaam (`@alamehan`)](https://alamehan.github.io)** — *Product Designer & Product Engineer*. Dirilis di bawah [Lisensi MIT](./LICENSE).
