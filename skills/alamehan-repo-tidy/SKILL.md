@@ -74,7 +74,7 @@ Whenever any file or directory moves, search the **entire repository** before ru
 ### 5. Command, CLI & Metadata Convergence
 - Make root manifest script names (`build`, `dev`, `typecheck`, `test:unit`, `test:e2e`, `verify`) match `AGENTS.md`, `CLAUDE.md`, `README.md`, and CI workflows **1:1** — zero "ghost commands" documented in Markdown that fail in the terminal.
 - Remove hardcoded repository URLs or scopes inside helper CLIs when they can be read dynamically from root `package.json` (`repository.url`, workspace `@scope/*`).
-- Purge hardcoded local machine paths (`D:\...`, `C:\Users\...`, `/Users/...`) and stale early-iteration descriptions or counts across `package.json` and sub-package `README.md` files.
+- Purge hardcoded local machine paths (such as Windows drive roots or personal user home directories) and stale early-iteration descriptions or counts across `package.json` and sub-package `README.md` files.
 
 ### 6. Automated Repo-Integrity Lock
 - If the repository has a unit test suite, include or update a fast structural test asserting that:

@@ -148,6 +148,6 @@ Under `## For Developers & Technical Details` (`## Detail Teknis & Panduan Devel
 ## 5. Mandatory Verification Checklist
 
 1. **Typography & Palette Proof:** Confirm `Bricolage Grotesque`, `Figtree`, and `Geist Mono` WOFF2 data URIs are embedded inside both SVGs and use the crisp `Porcelain SaaS` Light/Dark palette.
-2. **GitHub `"About"` & `"Topics"` Check:** Confirm Line 1 of the opening blockquote is a single sentence (`~115–155` chars) ending in `— crafted by @alamehan`, followed after a blank `>` line by `6–8` space-separated inline code topic slugs matching `^[a-z0-9][a-z0-9-]{0,49}$` (identical across `README.md` and `README.id.md`).
+2. **GitHub `"About"` & `"Topics"` Check:** Confirm Line 1 of the opening blockquote is a single sentence (`115–150` chars) ending in `— crafted by @alamehan`, followed after a blank `>` line by `6–8` space-separated inline code topic slugs matching `^[a-z0-9][a-z0-9-]{0,49}$` (identical across `README.md` and `README.id.md`).
 3. **Strict `<details>` & Link Check:** Verify blank lines around `</summary>` and `</details>`, valid relative links, and strict XML entity escaping across all SVGs.
 4. **Full-Page Light & Dark Visual QA:** Render both Light and Dark README pages in headless Chromium via Playwright and inspect the `.png` screenshots before committing.
