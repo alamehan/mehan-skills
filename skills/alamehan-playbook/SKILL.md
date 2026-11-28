@@ -3,14 +3,15 @@ name: alamehan-playbook
 description: >-
   Universal, stack-agnostic engineering, product, UX, and editorial quality playbooks
   covering first-principles ideation, unbounded iterative elevation with anti-bloat stop
-  gates, codebase-grounded blueprints, production implementation, root-cause debugging
-  and upstream guardrails, 5-second usability, real-browser visual/responsive checks,
-  multi-source content synthesis, clean-slate iteration cleanup and ripple sweeps,
-  evergreen low-maintenance architecture, git-diff documentation sync, and 0%-memory
-  fresh-context release sign-off. Activate when the user types "playbook" or asks to
-  challenge an idea without bias, push quality without over-engineering, debug root
-  causes, verify responsive UI, make copy/architecture evergreen, untangle iteration
-  leftovers ("kabel kusut"), sync all docs, or run a fresh-session release audit.
+  gates, codebase-grounded blueprints, canonical-path production implementation,
+  root-cause debugging and upstream guardrails, 5-second usability, real-browser
+  visual/responsive checks, multi-source content synthesis, clean-slate iteration
+  cleanup and ripple sweeps, evergreen low-maintenance architecture, git-diff
+  documentation sync, and 0%-memory fresh-context release sign-off. Activate when the
+  user types "playbook" or asks to challenge an idea without bias, push quality without
+  over-engineering, follow official project pipelines without raw workarounds, debug
+  root causes, verify responsive UI, make copy/architecture evergreen, untangle
+  iteration leftovers ("kabel kusut"), sync all docs, or run a fresh-session release audit.
 ---
 
 # `@alamehan` Universal Engineering, Product & Editorial Playbook (`alamehan-playbook`)
@@ -19,9 +20,9 @@ description: >-
 
 ---
 
-## 1. Operating Kernel — The 7 Non-Negotiable Laws
+## 1. Operating Kernel — The 8 Non-Negotiable Laws
 
-Every action executed through this skill obeys these seven laws automatically:
+Every action executed through this skill obeys these eight laws automatically:
 
 1. **Closed-World Single-Pass Scan (Zero Drip-Feed):** Never spot-check from memory or currently open files alone. Enumerate `100%` of affected files, routes, exports, schemas, or sections upfront (`git ls-files`, symbol search, `git diff`) in **one pass** so the user never has to ask *"is there anything else?"* repeatedly.
 2. **Objective Anti-Bias & Evidence-Backed Spine:** Ban sycophantic praise (*"brilliant"*, *"spot-on"*), hollow apologies, and empty promotional adjectives (*"seamless"*, *"robust"*, *"blazingly fast"*). Lead with a clear bottom-line takeaway and concrete risks. Challenge flawed framing honestly—and if an existing design is already optimal, **defend it with `file:line` evidence** rather than flip-flopping or inventing busywork.
@@ -33,21 +34,22 @@ Every action executed through this skill obeys these seven laws automatically:
 4. **Fresh-Context Isolation:** When auditing a blueprint (`#3`) or signing off a release (`#12`), spawn a **fresh, read-only subagent with `0%` conversation history** whenever subagent tools exist (`invoke_subagent`, `Agent`, `spawn_agent`), then triage its findings using checkable evidence (`Fix` verified defects · `Contest` false alarms with `file:line` proof · `Escalate` product trade-offs). In single-thread web chats without subagents, execute a strict file-only cold-start pass and disclose `Single-thread review mode` honestly.
 5. **Disk & `git diff` Grounding + Honest Verification States:** Reconstruct ground truth from live files, `git status`, `git diff`, and real command exit codes—never from summarized or compacted chat memory. Report every check using four honest states: **`Pass`** (proven by real execution/render), **`Warn`** (non-blocking gap), **`Fail`** (verified defect), or **`Unverified`** (cannot execute in current runtime—**never fake a green `Pass`**). Mark unverified external contracts `[UNVERIFIED]` and source ambiguities `[?]`.
 6. **Equalized Depth (`1..N`) & Smart 3-Speed Cadence:** Give item/section `N` the exact same precision as item `1` (zero batch drop-off). Match verification weight to the phase: **Speed 1** (`0` repo edits during planning `#1–#3`) -> **Speed 2** (fast targeted typechecks, unit tests, and affected visual checks during `#4–#11`) -> **Speed 3** (full test suites + doc sync + fresh-context sign-off during `#12` / `#0`).
-7. **Safe Action Boundaries & Concrete Execution:** Never act like a passive consultant offering vague advice—deliver concrete implementations or ready-to-apply solutions. Planning playbooks (`#1–#3`) stay strictly read-only until approved; audit/cleanup playbooks (`#5–#12`) fix unambiguous mechanical issues directly while pausing for confirmation before irreversible, public, destructive, or architectural one-way doors (`git push`, deleting user data, breaking public schemas). If the user adds `"report only"` / `"cek dulu"`, run `100%` read-only.
+7. **Safe Action Boundaries & Concrete Execution:** Never act like a passive consultant offering vague advice—deliver concrete implementations or ready-to-apply solutions. Planning playbooks (`#1–#3`) stay strictly read-only until approved; execution & audit playbooks (`#4–#12`) fix unambiguous mechanical issues directly while pausing for confirmation before irreversible, public, destructive, or architectural one-way doors (`git push`, deleting user data, breaking public schemas). If the user adds `"report only"` / `"cek dulu"`, run `100%` read-only.
+8. **Canonical Path & Upstream-First Discipline (Zero Raw Bypass):** Before editing or executing, discover whether the project already defines an official path—upstream sources of truth, codegen/migrations, manifest scripts (`package.json`, `Makefile`/`Justfile`/`Taskfile`, CI), shared helpers/design tokens, or SOPs (`AGENTS.md`/`CLAUDE.md`/`CONTRIBUTING.md`)—and route `100%` through it using the active OS shell syntax. Never hand-edit generated downstream outputs or improvise raw ad-hoc commands/workarounds when a canonical path exists. If an official path is **broken**, never silently bypass it—fix unambiguous mechanical issues upstream (within Law 7's safe scope) or report the exact blocker transparently; if **deprecated or conflicting**, flag the drift openly and offer to retire the stale path; if **none exists yet**, execute one-off tasks cleanly without forcing ceremony, and **optionally offer** (never force) a lightweight 1-command script/SOP only when a multi-step workflow repeats.
 
 ---
 
 ## 2. Project Auto-Adaptation & Human-First Menu Router
 
-### 2.1 Automatic Stack & Domain Adaptation
-Inspect root manifests (`package.json`, `Cargo.toml`, `go.mod`, `pyproject.toml`, `pubspec.yaml`, `Makefile`, `docs/`, or attached text) and adapt seamlessly:
+### 2.1 Automatic Stack, Domain & Pipeline Discovery
+Inspect root manifests (`package.json`, `Cargo.toml`, `go.mod`, `pyproject.toml`, `pubspec.yaml`, `Makefile`/`Justfile`/`Taskfile`, CI workflows, `AGENTS.md`/`CLAUDE.md`/`CONTRIBUTING.md`, `docs/`, or attached text) plus active OS/shell syntax to map official upstream sources, canonical scripts, and domain posture upfront:
 - **UI Apps & Design Systems (Web / Mobile / Desktop):** Apply native design tokens, `60fps` interaction discipline, 5-second visual usability (`#6`), and real-browser viewport + theme verification (`#7`).
 - **Headless Backend, APIs, CLIs & SDKs:** Apply `#6` to CLI help/flags, API contracts, and developer error ergonomics; mark `#7` `Not Applicable (Headless Project)` cleanly; emphasize concurrency, schema, and boundary safety in `#4–#5`.
 - **Pure Documents, Specs, RFCs, CVs & Research (Even Non-Git):** Operate directly on workspace or attached documents using `#1`, `#2`, `#6`, `#8`, `#10`, and `#12` without requiring build scripts.
 
 ### 2.2 Routing Rules (`Direct Fast-Path` vs. `Bare "playbook"` Menu)
 - **Fast-Path (Intent Already Stated):** If the user already describes their situation or names playbook number(s) (e.g., *"uji ide ini tanpa bias"*, *"kenapa ini ngelag?"*, *"playbook 9 11"*, *"playbook 0"*, *"audit 0% memori"*), **skip the menu** and execute the matching playbook(s) immediately, loading only the active playbook rules to keep attention sharp.
-- **Interactive Menu (Bare `"playbook"` Invocation):** Inspect `git status --short` and recent chat context in `< 2 seconds`, mirror the **user's active conversation language** (`English` below, or `Bahasa Indonesia` from §2.3 when conversing in Indonesian), place the workspace-matched recommendation at the very top, and display the complete grouped human-first menu without cramping or combining distinct items:
+- **Interactive Menu (Bare `"playbook"` Invocation):** Inspect `git status --short` and recent chat context in `< 2 seconds`, mirror the **user's active conversation language** (`English` or `Bahasa Indonesia` below), place the workspace-matched recommendation at the very top, and display the complete grouped human-first menu without cramping or combining distinct items:
 
 #### Canonical English Menu (Render When User Speaks English)
 
@@ -60,7 +62,7 @@ Inspect root manifests (`package.json`, `Cargo.toml`, `go.mod`, `pyproject.toml`
 - **`3` · Direction is decided, lock a concrete plan before touching code** — Inspect real files, schemas, and contracts first, map edge cases & risks, and write a step-by-step execution plan.
 
 ### Stage 2 · Building & Fixing Code
-- **`4` · Ready to build a feature or execute an approved plan** — Implement to production grade using native project patterns & design tokens, equal care across every item, smooth performance, and fast targeted checks.
+- **`4` · Ready to build a feature or execute an approved plan** — Implement to production grade using native project patterns, official pipelines & design tokens, equal care across every item, smooth performance, and fast targeted checks.
 - **`5` · Hit a bug, weird behavior, error, or performance lag** — Trace the exact technical root cause (no surface band-aids), fix it cleanly at the source, and lock an upstream guardrail so it never recurs.
 
 ### Stage 3 · Checking Usability, Real Screens & Written Content
@@ -78,7 +80,7 @@ Inspect root manifests (`package.json`, `Cargo.toml`, `go.mod`, `pyproject.toml`
 - **`0` · Complete Pre-Release Closeout (`7* + 9 + 10 + 11 + 12` in one pass)** — Verify screens (if UI), clean iteration leftovers & ripples, lock evergreen copy, sync all docs from `git diff`, and pass the `0%`-memory release audit.
 ```
 
-#### 2.3 Canonical Indonesian Menu (Render When User Speaks Indonesian)
+#### Canonical Indonesian Menu (Render When User Speaks Indonesian)
 
 ```markdown
 > **★ Disarankan saat ini:** **#[N] — [Situasi Terdeteksi]** *([1 kalimat alasan dari kondisi proyek/chat saat ini] — balas **`ok`** untuk langsung jalan, atau ketik nomor mana saja di bawah; tambahkan **`cek dulu`** jika ingin laporan tanpa edit file).*
@@ -89,7 +91,7 @@ Inspect root manifests (`package.json`, `Cargo.toml`, `go.mod`, `pyproject.toml`
 - **`3` · Arah solusi sudah mantap, mau kunci rencana kerja sebelum ngoding** — Periksa langsung kode, skema, dan aturan asli proyek yang tersentuh, petakan semua *edge-case* & risiko, lalu susun langkah eksekusi yang siap jalan tanpa tebak-tebakan.
 
 ### Tahap 2 · Saat Ngoding & Membereskan Masalah Teknis
-- **`4` · Siap bangun fitur / eksekusi rencana yang sudah disetujui** — Kerjakan dengan standar produksi mengikuti pola & Design System asli proyek, kualitas merata dari bagian pertama sampai terakhir, performa ringan, dan tes terfokus.
+- **`4` · Siap bangun fitur / eksekusi rencana yang sudah disetujui** — Kerjakan dengan standar produksi mengikuti pola, jalur resmi (*pipeline*) & Design System asli proyek, kualitas merata dari bagian pertama sampai terakhir, performa ringan, dan tes terfokus.
 - **`5` · Ketemu bug, error, perilaku aneh, atau terasa berat/ngelag** — Lacak akar masalah teknisnya sampai ketemu (bukan tambal gejala), perbaiki bersih di sumbernya, lalu kunci pengaman di hulu agar masalah sejenis tidak pernah terulang.
 
 ### Tahap 3 · Mengecek Kemudahan Pakai, Tampilan Layar & Kualitas Tulisan
@@ -127,15 +129,15 @@ Execute **only** the selected playbook(s) in logical stage order, fulfilling eve
 
 ### Playbook `3` · Execution Blueprint & Risk Audit
 - **Posture:** Read-only (`0` repository source edits until user approves execution).
-- **Method:** `record git HEAD baseline & inspect 100% of touched files/schemas/build scripts in one pass -> map edge cases, state/concurrency, responsive/theme, OS portability, migrations & privacy boundaries -> tag [UNVERIFIED] external contracts -> audit multi-module plans via fresh-context subagent (§4)`
-- **Deliverable Contract:** `Recorded git baseline · Complete touched-file & contract inventory · Edge-case & compatibility matrix · [UNVERIFIED] tags · Step-by-step execution checklist with falsifiable test criteria`
+- **Method:** `record git HEAD baseline & inspect 100% of touched files, schemas, upstream generators & canonical scripts/SOPs in one pass -> map edge cases, state/concurrency, responsive/theme, OS portability, migrations & privacy boundaries -> tag [UNVERIFIED] external contracts & flag any missing/deprecated pipelines -> audit multi-module plans via fresh-context subagent (§4)`
+- **Deliverable Contract:** `Recorded git baseline · Complete touched-file, upstream-source & canonical-pipeline inventory · Edge-case & compatibility matrix · [UNVERIFIED] tags · Step-by-step execution checklist with falsifiable test criteria`
 - **Guardrail:** Leave zero architectural decisions to guesswork during implementation, and never drip-feed overlooked codebase constraints across follow-up turns.
 
 ### Playbook `4` · Production-Grade Implementation
 - **Posture:** Write + Speed-2 targeted verification.
-- **Method:** `strictly follow native project architecture, naming, tokens & shared components -> implement items 1..N with equalized depth & zero scope creep -> keep runtime/UI interactions fast (60fps, zero full-tree re-render thrashing) & idle states calm -> run targeted type/lint/unit/visual checks`
+- **Method:** `strictly follow native project architecture, naming, tokens, shared components/helpers & canonical upstream-to-downstream pipelines -> implement items 1..N with equalized depth & zero scope creep -> keep runtime/UI interactions fast (60fps, zero full-tree re-render thrashing) & idle states calm -> run targeted type/lint/unit/visual checks`
 - **Deliverable Contract:** `Clean production implementation within approved scope · Equalized precision from item 1 to item N · Smooth runtime/interaction performance · Passing targeted checks`
-- **Guardrail:** Never bypass project design systems/conventions with ad-hoc CSS/hacks or mismatched cross-repo copy-paste, never rush later batch items, never weaken test assertions, and never run slow full-repo suites mid-iteration unless closing out.
+- **Guardrail:** Never bypass project design systems, shared helpers, or canonical scripts/codegen with ad-hoc CSS, raw downstream edits, or manual workarounds; never rush later batch items, never weaken test assertions, and never run slow full-repo suites mid-iteration unless closing out.
 
 ### Playbook `5` · Root-Cause Debug, Performance & Guardrail Lock
 - **Posture:** Write + upstream regression lock.
@@ -163,7 +165,7 @@ Execute **only** the selected playbook(s) in logical stage order, fulfilling eve
 
 ### Playbook `9` · Clean-Slate Cleanup & Ripple-Effect Sweep
 - **Posture:** Inspect + purge iteration debris + synchronize downstream wires.
-- **Method:** `scan workspace & git diff for dead code, obsolete shims/flags, orphan assets/styles & scratch files -> centralize misplaced files/state into canonical directories -> trace 100% of downstream consumers (system maps, registries, telemetry, bundlers, exports, .gitignore/privacy boundaries & CI) -> fix every broken or lagging wire`
+- **Method:** `scan workspace & git diff for dead code, obsolete shims/flags, deprecated duplicate scripts, orphan assets/styles & scratch files -> centralize misplaced files/state into canonical directories -> trace 100% of downstream consumers (canonical pipelines, system maps, registries, telemetry, bundlers, exports, .gitignore/privacy boundaries & CI) -> fix every broken or lagging wire`
 - **Deliverable Contract:** `Purged iteration-debris inventory · Canonical file/state centralization proof · 100% end-to-end parity across downstream maps, trackers, bundlers, privacy gates & CI workflows`
 - **Guardrail:** Never leave deprecated transition shims or loose root debris lingering *"just in case"*—the codebase must read as if cleanly architected from Day 1.
 
@@ -194,12 +196,12 @@ Executes **`#7` (if visual UI changed) -> `#9` -> `#10` -> `#11` -> `#12`** in o
 
 Whenever executing **Playbook `#3`** (multi-module blueprint check) or **Playbook `#12` / `#0`** (release sign-off):
 
-1. **Spawn Isolated Read-Only Reviewer** (via `invoke_subagent` with `research` / read-only agent, `Agent`, or `spawn_agent`—passing **zero** conversation history and **only** workspace paths + `git diff` inventory; if no subagent tool exists in web chat, run the identical checklist cold from disk and note `Single-thread review mode`):
+1. **Spawn Isolated Read-Only Reviewer** (via `invoke_subagent` with `research` / read-only agent, `Agent`, or `spawn_agent`—passing **zero** conversation history and **only** workspace paths + draft blueprint or `git diff` inventory; if no subagent tool exists in web chat, run the identical checklist cold from disk and note `Single-thread review mode`):
 
 ```text
-You are a stateless, read-only Fresh-Context Auditor arriving at this project today with zero prior context. Do not edit files or flatter the author. Read ONLY the repository's entrypoint documentation (README*, AGENTS.md / CLAUDE.md, architecture overview) and the provided changed/untracked file list, then return:
+You are a stateless, read-only Fresh-Context Auditor arriving at this project today with zero prior context. Do not edit files or flatter the author. Read ONLY the repository's entrypoint documentation (README*, AGENTS.md / CLAUDE.md, architecture overview) and the provided draft blueprint or target/changed file list, then return:
 1. Cold-Start Paraphrase (3–5 sentences): Strictly from the docs on disk, state what this project does, where its main entrypoints live, and the exact workflow to build, test, maintain, and release it. Flag any unstated assumption, undefined project term, or broken link/command as [P0 Blocker].
-2. Code, Architecture & Boundary Audit: Inspect changed/untracked files for logic bugs, unhandled edge cases, concurrency/state hazards, leftover iteration shims, unverified [UNVERIFIED] tags, or downstream pipeline/registry drift. Tag findings [P0 Blocker], [P1 Defect], or [P2 Polish] with exact file:line links.
+2. Code, Architecture & Boundary Audit: Inspect the blueprint or target/changed files for logic bugs, unhandled edge cases, concurrency/state hazards, raw pipeline/codegen bypasses, leftover iteration shims, unverified [UNVERIFIED] tags, or downstream pipeline/registry drift. Tag findings [P0 Blocker], [P1 Defect], or [P2 Polish] with exact file:line links.
 3. Public, Privacy & Portability Hygiene: Scan tracked files and release outputs for hardcoded personal filesystem paths (Windows drive roots or home directories), credentials/tokens, or private data leaking across .gitignore / public release boundaries.
 Reply with "[LGTM — Zero Material Findings]" after your Paraphrase ONLY if zero [P0]–[P2] issues exist.
 ```
